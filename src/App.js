@@ -30,9 +30,12 @@ function App() {
         <div className={`container ${inactive ? "inactive" : ""}`}>
           {/* improvememt, not recorded in video, its just looping through menuItems
           instead of hard coding all the routes */}
-          {menuItems.map((menu, index) => (
+          {/* {menuItems.map((menu, index) => (
             <>
+
+            
             <div className="mainCon">
+              test
               <Route key={menu.name} exact={menu.exact} path={menu.to}>
                 <h1>{menu.name}</h1>
               </Route>
@@ -46,9 +49,9 @@ function App() {
                   ))
                 : null}
             </>
-          ))}
+          ))} */}
 
-          {/* <Switch>
+          <Switch>
             <Route exact path={"/"}>
               <Dashboard />
             </Route>
@@ -76,7 +79,7 @@ function App() {
             <Route path={"/design-2"}>
               <Design2 />
             </Route>
-          </Switch> */}
+          </Switch>
         </div>
       </Router>
     </div>
