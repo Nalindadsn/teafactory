@@ -15,10 +15,10 @@ export const menuItems = [
     name: "Dashboard",
     exact: true,
     to: "/",
-    iconClassName: "bi bi-speedometer2",
+    iconClassName: "bi bi-speedometer2 ",
   },
   {
-    name: "Content",
+    name: "Content ",
     exact: true,
     to: `/content`,
     iconClassName: "bi bi-speedometer2",
@@ -44,7 +44,9 @@ export const menuItems = [
 ];
 
 const SideMenu = (props) => {
-  const [inactive, setInactive] = useState(false);
+
+
+  const [inactive, setInactive] = useState(window.innerWidth<768? (true):false);
 
   useEffect(() => {
     if (inactive) {
@@ -123,26 +125,7 @@ const SideMenu = (props) => {
             />
           ))}
 
-          {/* <li>
-            <a className="menu-item">
-              <div className="menu-icon">
-                <i class="bi bi-speedometer2"></i>
-              </div>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <MenuItem
-            name={"Content"}
-            subMenus={[{ name: "Courses" }, { name: "Videos" }]}
-          />
-          <li>
-            <a className="menu-item">
-              <div className="menu-icon">
-                <i class="bi bi-vector-pen"></i>
-              </div>
-              <span>Design</span>
-            </a>
-          </li> */}
+
         </ul>
       </div>
 
@@ -151,8 +134,8 @@ const SideMenu = (props) => {
           <img src={user} alt="user" />
         </div>
         <div className="user-info">
-          <h5>Rizwan Khan</h5>
-          <p>rizwankhan@gmail.com</p>
+        <h5>Nalinda Dissanayaka</h5>
+          <p>test@gmail.com</p>
         </div>
       </div>
     </div>
