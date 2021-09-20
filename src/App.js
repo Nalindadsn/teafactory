@@ -32,7 +32,7 @@ function App() {
           instead of hard coding all the routes */}
           {menuItems.map((menu, index) => (
             <>
-            <div>
+            <div className="mainCon">
               <Route key={menu.name} exact={menu.exact} path={menu.to}>
                 <h1>{menu.name}</h1>
               </Route>

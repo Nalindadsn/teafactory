@@ -177,9 +177,9 @@ body{
 
 
 
-/* .side-menu .main-menu .sub-menu.active{
+.side-menu .main-menu .sub-menu.active{
     max-height: 200px;
-} */
+}
 
 .side-menu .main-menu .sub-menu a{
     display: block;
@@ -257,12 +257,11 @@ body{
     background: #333;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        margin-left: 300px;
-    }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
-
+}
 .container{
     transition: margin-left .2s ease-in;
     padding: 0px;
