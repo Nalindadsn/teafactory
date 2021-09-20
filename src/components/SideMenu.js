@@ -85,8 +85,8 @@ const SideMenu = (props) => {
   return (
     <div className={`side-menu ${inactive ? "inactive" : ""}`}>
       <div className="top-section">
-        <div className="logo">
-          <img src={logo} alt="webscript" />
+        <div className="logo " style={{color:'#fff'}}>
+          TEA
         </div>
         <div onClick={() => setInactive(!inactive)} className="toggle-menu-btn">
           {inactive ? (
