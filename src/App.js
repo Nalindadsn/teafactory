@@ -58,10 +58,10 @@ function App() {
 
               <div className="mainC">
 
-              <nav class="navbar navbar-light bg-light">
+              <nav class="navbar navbar-light bg-white">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      {/* Link1 */}
+    &nbsp;&nbsp;&nbsp;&nbsp;
     </a>
   </div>
 </nav>
