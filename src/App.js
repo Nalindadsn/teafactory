@@ -3,6 +3,7 @@ import SideMenu, { menuItems } from "./components/SideMenu";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
+import HomeScreen from "./screen/HomeScreen";
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -51,9 +52,11 @@ function App() {
             </>
           ))} */}
 
+              <div className="mainC">
           <Switch>
             <Route exact path={"/"}>
-              <Dashboard />
+              <HomeScreen />
+
             </Route>
             <Route exact path={"/content"}>
               <Content />
@@ -80,6 +83,8 @@ function App() {
               <Design2 />
             </Route>
           </Switch>
+          
+          </div>
         </div>
       </Router>
     </div>

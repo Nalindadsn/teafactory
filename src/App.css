@@ -256,10 +256,12 @@ body{
     border-radius: 1px;
     background: #333;
 }
-
+.mainC {
+    margin-left: 200px;
+}
 @media only screen and (max-width: 600px) {
   .mainC {
-      margin-left: 200px;
+      margin-left: 20px;
   }
 }
 .container{
