@@ -18,6 +18,8 @@ const Design2 = () => <h1>Design 2</h1>;
 function App() {
   const [inactive, setInactive] = useState(false);
 
+  
+
   return (
     <div className="App">
       <Router>
@@ -28,7 +30,9 @@ function App() {
           }}
         />
 
-        <div className={`container ${inactive ? "inactive" : ""}`}>
+        <div className={` ${inactive ? "inactive" : ""}`} >
+
+
           {/* improvememt, not recorded in video, its just looping through menuItems
           instead of hard coding all the routes */}
           {/* {menuItems.map((menu, index) => (
@@ -53,6 +57,15 @@ function App() {
           ))} */}
 
               <div className="mainC">
+
+              <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      Link1
+    </a>
+  </div>
+</nav>
+
           <Switch>
             <Route exact path={"/"}>
               <HomeScreen />

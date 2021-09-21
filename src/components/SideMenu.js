@@ -54,6 +54,7 @@ const SideMenu = (props) => {
     }
 
     props.onCollapse(inactive);
+
   }, [inactive]);
 
   //just an improvment and it is not recorded in video :(
@@ -87,6 +88,9 @@ const SideMenu = (props) => {
       <div className="top-section">
         <div className="logo " style={{color:'#fff'}}>
           TEA
+
+
+          
         </div>
         <div onClick={() => setInactive(!inactive)} className="toggle-menu-btn">
           {inactive ? (
