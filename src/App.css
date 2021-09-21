@@ -48,6 +48,7 @@ body{
     box-sizing: border-box;
     padding: 30px 20px;
     transition: width .2s ease-in;
+    z-index: 1000;
 }
 
 .side-menu.inactive{
@@ -261,7 +262,7 @@ body{
 }
 @media only screen and (max-width: 600px) {
   .mainC {
-      margin-left: 20px;
+      margin-left: 80px;
   }
 }
 .container{
