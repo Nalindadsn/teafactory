@@ -23,7 +23,7 @@ const MenuItem = (props) => {
         <div className="menu-icon">
           <i class={iconClassName}></i>
         </div>
-        <span>{name}</span>
+        <span>{name} {subMenus && subMenus.length > 0 ? (<i class="bi bi-arrow-down-circle-fill"></i>):null} </span>
       </Link>
       {subMenus && subMenus.length > 0 ? (
         <ul className={`sub-menu`}>
