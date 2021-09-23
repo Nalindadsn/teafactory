@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+#root > div > div > ul{
+    padding: 0;
+}
 .sidebar{
   position: fixed;
   height: 100%;
@@ -346,9 +349,11 @@ nav .profile-details i{
   color: #333;
 }
 /* Responsive Media Query */
-@media (max-width: 1240px) {
+@media (max-width: 768px) {
+
   .sidebar{
     width: 60px;
+    overflow: hidden;
   }
   .sidebar.active{
     width: 220px;
