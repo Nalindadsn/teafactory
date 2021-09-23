@@ -3,8 +3,8 @@ import React from 'react'
 function HomeScreen() {
     return (
         <div>
-            <h1>Home Screen</h1>
-            <div className="card">
+            <div className="card m-4">
+            <h3>Home Screen</h3>
                 test
             </div>
         </div>

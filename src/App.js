@@ -59,7 +59,8 @@ function App() {
 
 
       <div class="sales-boxes">
-        <div class="recent-sales box">
+        <div class="">
+
 {/* <div className="card">
 test
 </div> */}
