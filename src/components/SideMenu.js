@@ -13,46 +13,46 @@ const SideMenu = (props) => {
    
    <>
 
-<div class="sidebar close">
+<div className="sidebar close">
     <div className="logo-details">
-    <i class='bx bxs-institution'></i>
+    <i className='bx bxs-institution'></i>
 
       
-      <span class="logo_name">Tea</span>
+      <span className="logo_name">Tea</span>
     </div>
-    <ul class="nav-links" style={{backgroundImage:`url(${image})`,backgroundSize:'cover'}}>
+    <ul className="nav-links" style={{backgroundImage:`url(${image})`,backgroundSize:'cover'}}>
       <li>
 
         <Link to="/">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Dashboard </span>
+          <i className='bx bx-grid-alt' ></i>
+          <span className="link_name">Dashboard </span>
         </Link>
       </li>
       <li>
-        <div class="iocn-link">
+        <div className="iocn-link">
           <Link to="/oop">
-            <i class='bx bx-collection' ></i>
-            <span class="link_name">Category</span>
+            <i className='bx bx-collection' ></i>
+            <span className="link_name">Category</span>
           </Link>
-          <i class='bx bxs-chevron-down arrow' ></i>
+          <i className='bx bxs-chevron-down arrow' ></i>
         </div>
-        <ul class="sub-menu">
-          <li><Link class="link_name" to="/">Category</Link></li>
+        <ul className="sub-menu">
+          <li><Link className="link_name" to="/">Category</Link></li>
           <li><Link to="/">HTML & CSS</Link></li>
           <li><Link to="/">JavaScript</Link></li>
           <li><Link to="/">PHP & MySQL</Link></li>
         </ul>
       </li>
       <li>
-        <div class="iocn-link">
+        <div className="iocn-link">
           <Link to="/">
-            <i class='bx bx-book-alt' ></i>
-            <span class="link_name">Posts</span>
+            <i className='bx bx-book-alt' ></i>
+            <span className="link_name">Posts</span>
           </Link>
-          <i class='bx bxs-chevron-down arrow' ></i>
+          <i className='bx bxs-chevron-down arrow' ></i>
         </div>
-        <ul class="sub-menu">
-          <li><Link class="link_name" to="/">Posts</Link></li>
+        <ul className="sub-menu">
+          <li><Link className="link_name" to="/">Posts</Link></li>
           <li><Link to="/">Web Design</Link></li>
           <li><Link to="/">Login Form</Link></li>
           <li><Link to="/">Card Design</Link></li>
@@ -60,32 +60,32 @@ const SideMenu = (props) => {
       </li>
       <li>
         <Link to="/">
-          <i class='bx bx-pie-chart-alt-2' ></i>
-          <span class="link_name">Analytics</span>
+          <i className='bx bx-pie-chart-alt-2' ></i>
+          <span className="link_name">Analytics</span>
         </Link>
-        <ul class="sub-menu blank">
-          <li><Link class="link_name" to="/">Analytics</Link></li>
+        <ul className="sub-menu blank">
+          <li><Link className="link_name" to="/">Analytics</Link></li>
         </ul>
       </li>
       <li>
         <Link to="/">
-          <i class='bx bx-line-chart' ></i>
-          <span class="link_name">Chart</span>
+          <i className='bx bx-line-chart' ></i>
+          <span className="link_name">Chart</span>
         </Link>
-        <ul class="sub-menu blank">
-          <li><Link class="link_name" to="/">Chart</Link></li>
+        <ul className="sub-menu blank">
+          <li><Link className="link_name" to="/">Chart</Link></li>
         </ul>
       </li>
       <li>
-        <div class="iocn-link">
+        <div className="iocn-link">
           <Link to="/">
-            <i class='bx bx-plug' ></i>
-            <span class="link_name">Plugins</span>
+            <i className='bx bx-plug' ></i>
+            <span className="link_name">Plugins</span>
           </Link>
-          <i class='bx bxs-chevron-down arrow' ></i>
+          <i className='bx bxs-chevron-down arrow' ></i>
         </div>
-        <ul class="sub-menu">
-          <li><Link class="link_name" to="/">Plugins</Link></li>
+        <ul className="sub-menu">
+          <li><Link className="link_name" to="/">Plugins</Link></li>
           <li><Link to="/">UI Face</Link></li>
           <li><Link to="/">Pigments</Link></li>
           <li><Link to="/">Box Icons</Link></li>
@@ -93,41 +93,41 @@ const SideMenu = (props) => {
       </li>
       <li>
         <Link to="/">
-          <i class='bx bx-compass' ></i>
-          <span class="link_name">Explore</span>
+          <i className='bx bx-compass' ></i>
+          <span className="link_name">Explore</span>
         </Link>
-        <ul class="sub-menu blank">
-          <li><Link class="link_name" to="/">Explore</Link></li>
+        <ul className="sub-menu blank">
+          <li><Link className="link_name" to="/">Explore</Link></li>
         </ul>
       </li>
       <li>
         <Link to="/">
-          <i class='bx bx-history'></i>
-          <span class="link_name">History</span>
+          <i className='bx bx-history'></i>
+          <span className="link_name">History</span>
         </Link>
-        <ul class="sub-menu blank">
-          <li><Link class="link_name" to="/">History</Link></li>
+        <ul className="sub-menu blank">
+          <li><Link className="link_name" to="/">History</Link></li>
         </ul>
       </li>
       <li>
         <Link to="/">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Setting</span>
+          <i className='bx bx-cog' ></i>
+          <span className="link_name">Setting</span>
         </Link>
-        <ul class="sub-menu blank">
-          <li><Link class="link_name" to="/">Setting</Link></li>
+        <ul className="sub-menu blank">
+          <li><Link className="link_name" to="/">Setting</Link></li>
         </ul>
       </li>
       <li>
-    <div class="profile-details">
-      <div class="profile-content">
+    <div className="profile-details">
+      <div className="profile-content">
         <img src={user} alt="user"/>
       </div>
-      <div class="name-job">
-        <div class="profile_name">Prem Shahi</div>
-        <div class="job">Web Desginer</div>
+      <div className="name-job">
+        <div className="profile_name">Prem Shahi</div>
+        <div className="job">Web Desginer</div>
       </div>
-      <i class='bx bx-log-out' ></i>
+      <i className='bx bx-log-out' ></i>
     </div>
   </li>
 </ul>

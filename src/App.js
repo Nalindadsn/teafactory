@@ -9,16 +9,17 @@ function App() {
 
   return (
     <div className="App">
+
       <Router>
 <SideMenu/>
-  <section class="home-section">
-  <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand">Navbar</span>
-      <input type="search" className="form-control" placeholder="search..." style={{width:"40%",float:"left" }}/>
-    <div class="d-flex">
-    <div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"  style={{width:"40%",float:"" }}>
+  <section className="home-section">
+  <nav className="navbar navbar-light bg-light">
+  <div className="container-fluid">
+    <span className="navbar-brand">TEA FACTORY</span>
+    <div className="d-flex text-right">
+      <input type="search" className="form-control" placeholder="search..." style={{width:"50%",float:"left" }}/>
+    <div className="btn-group">
+  <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"  style={{width:"40%",float:"" }}>
     Nalinda Dissanayaka
   </button>
 
@@ -28,10 +29,8 @@ function App() {
 </nav>
 
 
-    <div className="tst">
-<div className="">
-  <div className="">
-    
+    <div>
+
 
       <Switch>
             <Route exact path={"/"}>
@@ -39,8 +38,7 @@ function App() {
 
             </Route>
           </Switch>
-  </div>
-</div>
+
 
     </div>
   </section>
