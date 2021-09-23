@@ -15,7 +15,9 @@ const SideMenu = (props) => {
 
 <div class="sidebar close">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
+    <i class='bx bxs-institution'></i>
+
+      
       <span class="logo_name">Tea</span>
     </div>
     <ul class="nav-links" style={{backgroundImage:`url(${image})`,backgroundSize:'cover'}}>
