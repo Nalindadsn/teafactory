@@ -3,7 +3,18 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from "react";
 
+import HomeScreen from "./screen/HomeScreen";
+import SideMenu from "./components/SideMenu";
 
+const Dashboard = () => <h1>Dashboard</h1>;
+const Content = () => <h1>Content</h1>;
+const Courses = () => <h1>Content/Courses</h1>;
+const Videos = () => <h1>Content/Videos</h1>;
+const Design = () => <h1>Design</h1>;
+const Content2 = () => <h1>Content2</h1>;
+const Courses2 = () => <h1>Content/Courses 2</h1>;
+const Videos2 = () => <h1>Content/Videos 2</h1>;
+const Design2 = () => <h1>Design 2</h1>;
 function App() {
   const [inactive, setInactive] = useState(false);
 
@@ -13,27 +24,7 @@ function App() {
     <div className="App">
       <Router>
 
-      <div className="sidebar">
-    <div className="logo-details">
-      <i className='bx bxl-c-plus-plus'></i>
-      <span className="logo_name">CodingLab</span>
-    </div>
-      <ul className="nav-links">
-        <li>
-          <a href="/" className="active">
-            <i className='bx bx-grid-alt' ></i>
-            <span className="links_name"><span className="lts">Dashboard</span></span>
-          </a>
-        </li>
- 
-        <li className="log_out">
-          <a href="/logout">
-            <i className='bx bx-log-out'></i>
-            <span className="links_name">Log out</span>
-          </a>
-        </li>
-      </ul>
-  </div>
+<SideMenu/>
 <section  className="home-section">
 <nav>
 
@@ -64,7 +55,54 @@ function App() {
           </div>
           <i class='bx bx-cart-alt cart'></i>
         </div>
-      </div>     
+      </div> 
+
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+{/* <div className="card">
+test
+</div> */}
+
+
+<Switch>
+            <Route exact path={"/"}>
+              <HomeScreen />
+
+            </Route>
+            <Route exact path={"/content"}>
+              <Content />
+            </Route>
+            <Route path={"/content/courses"}>
+              <Courses />
+            </Route>
+            <Route path={"/content/videos"}>
+              <Videos />
+            </Route>
+            <Route path={"/design"}>
+              <Design />
+            </Route>
+            <Route exact path={"/content-2"}>
+              <Content2 />
+            </Route>
+            <Route path={"/content-2/courses"}>
+              <Courses2 />
+            </Route>
+            <Route path={"/content-2/videos"}>
+              <Videos2 />
+            </Route>
+            <Route path={"/design-2"}>
+              <Design2 />
+            </Route>
+          </Switch>
+          
+
+
+        </div>
+      </div>
+
+      
+          
     </div>
 </section>
 
