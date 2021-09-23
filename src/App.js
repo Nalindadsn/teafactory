@@ -10,50 +10,39 @@ function App() {
   return (
     <div className="App">
       <Router>
-
 <SideMenu/>
-<section  className="home-section">
-<nav>
+  <section class="home-section">
+  <nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+      <input type="search" className="form-control" placeholder="search..." style={{width:"40%",float:"left" }}/>
+    <div class="d-flex">
+    <div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"  style={{width:"40%",float:"" }}>
+    Nalinda Dissanayaka
+  </button>
 
-      <div className="search-box">
-        <input type="text" placeholder="Search..."/>
-        <i className='bx bx-search' ></i>
-      </div>
-      <div className="profile-details">
-        <span className="admin_name">test</span>
-        <i className='bx bx-chevron-down' ></i>
-      </div>
-    </nav>
-
-
-    <div className="home-content">
-
-
+</div>
+    </div>
+  </div>
+</nav>
 
 
-      <div className="row">
-        <div className="col-md-12">
+    <div class="">
+<div className="">
+  <div className="">
 
-{/* <div className="card">
-test
-</div> */}
-
-
-<Switch>
+      <Switch>
             <Route exact path={"/"}>
               <HomeScreen />
+
             </Route>
           </Switch>
-          
+  </div>
+</div>
 
-
-        </div>
-      </div>
-
-      
-          
     </div>
-</section>
+  </section>
 
 
       </Router>
