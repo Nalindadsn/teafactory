@@ -14,7 +14,7 @@ const SideMenu = (props) => {
    <>
 
 <div class="sidebar close">
-    <div class="logo-details">
+    <div className="logo-details">
     <i class='bx bxs-institution'></i>
 
       
