@@ -22,9 +22,10 @@ const SideMenu = (props) => {
     </div>
     <ul class="nav-links" style={{backgroundImage:`url(${image})`,backgroundSize:'cover'}}>
       <li>
+
         <Link to="/">
           <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Dashboard</span>
+          <span class="link_name">Dashboard </span>
         </Link>
       </li>
       <li>
