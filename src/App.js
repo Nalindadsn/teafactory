@@ -21,7 +21,7 @@ function App() {
   <nav className="navbar navbar-light bg-light">
   <div className="container-fluid">
     <span className="navbar-brand">TEA FACTORY {signIn}</span>
-    <div className="d-flex "  style={{textAlign:"right" }}>
+    <div className="flex "  style={{textAlign:"right" }}>
       
       <input type="search" className="form-control" placeholder="search..." style={{width:"100%" }}/>
       {/* <button type="button" className="btn btn-secondary dropdown-toggle"  style={{width:"40%",float:"right" }}>
