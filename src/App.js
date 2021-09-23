@@ -14,7 +14,7 @@ function App() {
   <section class="home-section">
   <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
+    <span class="navbar-brand">Navbar</span>
       <input type="search" className="form-control" placeholder="search..." style={{width:"40%",float:"left" }}/>
     <div class="d-flex">
     <div class="btn-group">
@@ -28,7 +28,7 @@ function App() {
 </nav>
 
 
-    <div class="">
+    <div className="">
 <div className="">
   <div className="">
 
