@@ -228,6 +228,10 @@ nav .profile-details i{
 .home-content .box .indicator .text{
   font-size: 12px;
 }
+.active{
+    background-color: red;
+    color: #fff;
+}
 .home-content .box .cart{
   display: inline-block;
   font-size: 32px;

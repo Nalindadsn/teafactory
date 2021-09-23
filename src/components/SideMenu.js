@@ -18,9 +18,12 @@ const SideMenu = (props) => {
     </div>
       <ul className="nav-links">
         <li>
-          {/* <a href="/" className="active">
-          </a> */}
-          <Link to='/'>
+          <Link  exact={true} activeClassName='is-active'  to='/'>
+            <i className='bx bx-grid-alt' ></i>
+            <span className="links_name"><span className="lts">Dashboard</span></span></Link>
+        </li>
+        <li>
+          <Link  exact={true} activeClassName='is-active'  to='/v'>
             <i className='bx bx-grid-alt' ></i>
             <span className="links_name"><span className="lts">Dashboard</span></span></Link>
         </li>
